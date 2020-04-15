@@ -1,20 +1,8 @@
-import { disp } from '../../GAS | Library/v01/gas/disp';
-import { clearContent } from '../../GAS | Library/v02/gas/manualTesting/clearContent';
-import { sortColumn } from '../../GAS | Library/v02/gas/manualTesting/sortColumn';
-import { paste } from '../../GAS | Library/v02/gas/manualTesting/paste';
+import { setMenu } from '../../GAS | Library/v02/gas/setMenu';
 
-import { menu } from './menu';
+import { menuElements } from './menu';
 
-global.tests = () => {
-	disp('Hello');
-};
-
-global.menu = {
-	clearContent,
-	sortColumn,
-	paste,
-};
-
+// @ts-ignore
 global.onOpen = () => {
-	menu();
+	setMenu(menuElements, 'ICON', true);
 };
