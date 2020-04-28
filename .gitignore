@@ -43,6 +43,8 @@ build/Release
 
 # Dependency directories
 node_modules/
+node_modules
+node_modules.nosync
 jspm_packages/
 
 # Katalog wynikowy
@@ -90,3 +92,4 @@ typings/
 
 # VSC Workplace files
 .code-workspace
+node_modules
